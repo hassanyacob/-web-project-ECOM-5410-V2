@@ -50,7 +50,7 @@ li a:hover {
 }
 .buth   { 
      color:white;
-     background-color:black;
+     background-color:transparent;
     border-style:double;
     border-color: white;
      border-radius: 15px;
@@ -145,46 +145,4 @@ background-size: 1500px;
     font-style:normal;
     font-weight: 600;
     
-}
-            
-* {
-    margin: 0;
-    padding: 0;
-}
-            .book-bg {
-                position: relative;
-                width: 150px;
-                height: 200px;
-                margin: 10px auto;
-                background: url('page.jpg') no-repeat;
-                background-size: contain;
-                transform-style: preserve-3d;
-                perspective: 500px;
-                background-position: center;
-            }
-            .book-cover {
-                position: absolute;
-                width: 150px;
-                height: 200px;
-                background: url('book.jpg') no-repeat;
-                background-size: contain;
-                transform-origin: 0 50%;
-                transition: all 0.3s ease;
-                background-position: center;
-            }
-            .book-bg:hover .book-cover {
-                transform: rotateY(-60deg);
-}
-
-.footer {
-   position:static;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: black;
-   color: white;
-   text-align: left;
-   border-color: white;
-   border-top-style:solid;
-   border-width: 2px;
 }
