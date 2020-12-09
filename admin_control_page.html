@@ -5,66 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="index1hcss.css">
+        <link rel="stylesheet" href="admin_control_page_style.css">
+        
         <meta name="description" content="admin control page">
-        <style>
-           body{
-                background-image:url(https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80) ;
-                align-self: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                margin: 0px;
-            }
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: #333;
-            }
-
-            li {
-                float: right;
-            }
-
-            li a {
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-
-            li a:hover {
-                background-color: #111;
-                text-decoration: none;
-                color: aqua;
-            }
-            .welcome > h1{
-                margin-top: -10px;
-                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                text-align: center;
-                font-size: 70px;
-                color: white;
-            }
-            .input_control{
-                background-color: rgba(0, 0, 0, 0.5);
-                display: table;
-                margin: 0 auto;
-                font-size: 30px;
-                color: gold;
-                font-weight: bold;
-                margin-bottom: 5%;
-                padding: 8px;
-
-            }
-            .input_control label{
-                font-family: Arial, Helvetica, sans-serif;
-                color: white;
-                margin: 16px;
-            }
-            
-        </style>
+    
         <title>admin control page</title>
         
     </head>
@@ -86,7 +30,7 @@
 
         <div class="input_control">
             <form action="index.html" method="GET" >
-                <label for="Categories_list">Categories</label>
+                <label for="Categories_list">Categories List</label>
                 <select id="Categories_list" name="Categories_list"  >
                   <option value="Novels" selected>روايات</option>
                   <option value="scientific books">كتب علمية</option>
@@ -100,25 +44,25 @@
                 <input  type="radio" name="add_delete" id="add"> add
                 <input type="radio" name="add_delete" id="delete"> delete
                 <br>
-                <label for="name">Name of the book</label>
+                <label for="name">Name of the book: </label>
                 <input type="text" name="name" id="book_name" placeholder="books name">
                 <br>
-                <label for="name">select the book: </label>
-                <input type="file" name="book" id="book">
+                <label for="name">Select the book: </label>
+                <input type="file" name="book" id="book" style="margin-left: 10px;">
                 <br>
-                <label for="name">Name of the books author</label>
+                <label for="name">Name of the books author: </label>
                 <input type="text" name="author" id="book_author" placeholder=" books author">
                 <br>
                 <label for="description">books description: </label>
              
-                <textarea name="description" rows="5" cols="50" placeholder="write the books description" style="font-size:medium; color: black; margin-left: 40%;"></textarea>
+                <textarea name="description" rows="5" cols="50" placeholder="write the books description"></textarea>
                 <br>
-            <input type="submit" name="submit" value="submit" style="margin: 16px; float: right; color: black;">
+            <input id="submitButton" type="submit" name="submit" value="add" >
             </form>
         </div>
         
 
-     
+    
     
      
         
